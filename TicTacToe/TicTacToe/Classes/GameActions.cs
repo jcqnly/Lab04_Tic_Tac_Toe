@@ -7,9 +7,9 @@ namespace TicTacToe.Classes
     class GameActions
     {
         //get the player move selection
-        public string Move { get; set; }
+        public int Move { get; set; }
 
-        public GameActions(string move)
+        public GameActions(int move)
         {
             Move = move;
         }

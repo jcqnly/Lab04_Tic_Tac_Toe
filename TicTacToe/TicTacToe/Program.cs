@@ -11,10 +11,6 @@ namespace TicTacToe
             PlayerInfo();
             Console.Read();  
             Console.Clear();
-            DisplayGame();
-            Console.Read();
-            Console.Clear();
-            UpdateBoard();
         }
 
         /// <summary>
@@ -22,16 +18,17 @@ namespace TicTacToe
         /// </summary>
         public static void PlayerInfo()
         {
-            Console.WriteLine("Player 1, enter your name: ");
             //create an instance of the Player class and set values for player 1
-            Player Player1 = new Player(Console.ReadLine(), "X", true);
+            Player Player1 = new Player("X", true);
             
-            Console.WriteLine("Player 2, enter your name: ");
             //create an instance of the Player class and set values for player 1
-            Player Player2 = new Player(Console.ReadLine(), "O", false);
+            Player Player2 = new Player("O", false);
 
-            Console.WriteLine($"Player 1 is {Player1.Name}, and you are {Player1.Marker}");
-            Console.WriteLine($"Player 2 is {Player2.Name}, and you are {Player2.Marker}");
+            Console.WriteLine($"Player 1 you are {Player1.Marker}");
+            Console.WriteLine($"Player 2 you are {Player2.Marker}");
+            Console.Read();
+            Console.Clear();
+            DisplayGame();
         }
 
         /// <summary>
@@ -55,18 +52,24 @@ namespace TicTacToe
         public static void PlayerActions()
         {
             Console.WriteLine($"Player1, select a number: \n");
-            GameActions Player1Moves = new GameActions(Console.ReadLine());
+            GameActions Player1Moves = new GameActions(int.Parse(Console.ReadLine()));
+
+            //call UpdateBoard to add moves
+            UpdateBoard(Player1Moves.Move);
 
             Console.WriteLine($"Player2, select a number: \n");
-            GameActions Player2Moves = new GameActions(Console.ReadLine());
+            GameActions Player2Moves = new GameActions(int.Parse(Console.ReadLine()));
+
+            //call UpdateBoard to add moves
+            UpdateBoard(Player2Moves.Move);
 
             Console.WriteLine($"Player1 chose {Player1Moves.Move}");
             Console.WriteLine($"Player2 chose {Player2Moves.Move}");
         }
 
-        public static void UpdateBoard()
+        public static void UpdateBoard(int move)
         {
-            Console.WriteLine("in UpdateBoard()");
+            //Console.WriteLine($"UpdateBoard with {move}");
         }
     }
 }
