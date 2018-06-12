@@ -32,7 +32,7 @@ The 2nd player will select where to go after player 1.
 
 ## Screenshot Walk Through
 1: Player1 and Player2 will be given a marker each
-![Initial View](../assets/initialView.png)
+![Initial View](\assets\initialView.png)
 
 2: Player1 chooses where to go first
 ![Player 1 chooses](../assets/player1.png)
