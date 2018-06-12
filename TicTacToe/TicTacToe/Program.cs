@@ -38,7 +38,8 @@ namespace TicTacToe
         public static void DisplayGame()
         {
             GameBoard game = new GameBoard();
-            PlayerActions();
+            Console.Read();
+            //PlayerActions();
         }
     }
 }
