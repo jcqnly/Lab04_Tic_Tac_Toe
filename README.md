@@ -32,10 +32,13 @@ The 2nd player will select where to go after player 1.
 
 ## Screenshot Walk Through
 1: Player1 and Player2 will be given a marker each
+
 ![Initial View](TicTacToe/assets/initialView.png)
 
 2: Player1 chooses where to go first
+
 ![Player 1 chooses](TicTacToe/assets/player1.png)
 
 3: Player2 goes next
+
 ![Player 2 chooses](TicTacToe/assets/player2.png)
