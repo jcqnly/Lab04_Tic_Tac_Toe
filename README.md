@@ -1,5 +1,5 @@
 # Lab04 Tic Tac Toe
-Tic Tac Toe game implementing the concepts of C# classes and Objects
+Tic Tac Toe implements the concepts of C# classes and objects
 
 ## Dependencies
 This game runs on .NET Core 2.1, which can be downloaded [here](https://www.microsoft.com/net/download/macos).
@@ -20,13 +20,13 @@ to create an interactive 2 player tic tac toe game.
 
 ---
 ## How to Use the Program
-Two players will input their names respectively.
-The 1st player will choose to be O or X.
-They will then be presented with a tic tac toe board.
-The 9 squares of the board will be labeled from 1-9.
-The 1st player will select where to go, 
+The program will automatically assign an X marker to player 1
+and an O marker to player 2.
+The board will then be displayed.
+The 1st player will select where to go 
 by entering the number of the square.
 The 2nd player will select where to go after player 1.
+This process will repeat.
 
 ---
 
