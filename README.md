@@ -26,21 +26,16 @@ They will then be presented with a tic tac toe board.
 The 9 squares of the board will be labeled from 1-9.
 The 1st player will select where to go, 
 by entering the number of the square.
+The 2nd player will select where to go after player 1.
 
 ---
 
 ## Screenshot Walk Through
-1: Enter in your names
-![]()
+1: Player1 and Player2 will be given a marker each
+![Initial View](/assets/initialView.png)
 
-2: Choose to be either X or O
-![]()
+2: Player1 chooses where to go first
+![Player 1 chooses](/assets/player1.png)
 
-3: Select where to go
-![]()
-
-4: Game will switch to let the other player go
-![]()
-
-5: Winner will be displayed
-![]()
+3: Player2 goes next
+![Player 2 chooses](/assets/player2.png)
