@@ -12,8 +12,8 @@ namespace TicTacToe
 
         public static void StartGame()
         {
-
-            Game game = new Game();
+            
+            
         }
     }
 }
